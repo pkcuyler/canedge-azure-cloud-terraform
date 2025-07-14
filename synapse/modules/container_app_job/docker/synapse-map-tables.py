@@ -112,7 +112,7 @@ def generate_create_external_table_sql(table_name, schema, location):
     )
     WITH
     (
-        LOCATION = '{location}/*',
+        LOCATION = '{location}/*/*/*/',
         DATA_SOURCE = [ParquetDataLake],
         FILE_FORMAT = [ParquetFormat]
     )
